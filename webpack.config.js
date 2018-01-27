@@ -23,8 +23,15 @@ module.exports = env => {
     module: {
       loaders: [
         {test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader'},
-        {test: /\.css$/, loader: 'style-loader!css-loader'},
+        {test: /\.less$/, loader: 'style-loader!css-loader!less-loader'},
         {test: /(\.eot|\.woff2|\.woff|\.ttf|\.svg)/, loader: 'file-loader'},
+        {
+          test: /\.(gif|png|jpe?g|svg|webp)$/i,
+          loaders: [
+            'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',
+            'image-webpack-loader'
+          ]
+        },
       ],
     },
     plugins: removeEmpty([
