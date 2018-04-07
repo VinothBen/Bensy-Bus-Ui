@@ -6,7 +6,6 @@ export default connect(
     (state)=>{
        return {
                 config: state.headerReducer.config,
-                data: state.headerReducer.data
               };
 },
     (dispatch)=>{

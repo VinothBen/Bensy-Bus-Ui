@@ -5,8 +5,9 @@ import {createStore, applyMiddleware} from "redux";
 import {Provider} from "react-redux";
 import Logger from "redux-logger";
 import Reducers from "../src/CompineReducer";
+import thunk from "redux-thunk";
 
-const Store = createStore(Reducers, applyMiddleware(Logger));
+const Store = createStore(Reducers, applyMiddleware(Logger, thunk));
 
 class Root extends Component {
     render() {

@@ -15,15 +15,16 @@ module.exports = env => {
       publicPath: '/build/',
       pathinfo: ifNotProd(),
     },
-    devtool: ifProd('source-map', 'eval'),
+    devtool:'source-map',
+    watch: true,
     devServer: {
-      port: 8080,
+      port: 3070,
       historyApiFallback: true
     },
     module: {
       loaders: [
         {test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader'},
-        {test: /\.less$/, loader: 'style-loader!css-loader!less-loader'},
+        {test: /\.less$/, loader: 'style-loader?sourceMap!css-loader?sourceMap!less-loader?sourceMap'},
         {test: /(\.eot|\.woff2|\.woff|\.ttf|\.svg)/, loader: 'file-loader'},
         {
           test: /\.(gif|png|jpe?g|svg|webp)$/i,
