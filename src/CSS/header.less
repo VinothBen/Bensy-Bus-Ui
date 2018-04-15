@@ -9,33 +9,37 @@
         display: inline-flex;
         font-family: "Times New Roman", Times, serif;
         font-size: 20px;
-        height: 70px;
+        height: 50px;
         width: 100%;
         .headerMainTitle{
             font-size: 35px; 
             width: 150px;
             bottom: 5px;
             font-style: italic;
+            cursor: pointer;
         }
         .headerSubMenu{
             font-size: 18px;
             display: inline-flex;
             margin-top: 7px;
             padding-left: 25px;
+            height: 30px;
             .headerSubMenuRow{
                    font-family: "calibri";
                    margin: 4px 0px;
                    font-size: 16px;
                    width: auto;
                    height: 20px;
+                   cursor: pointer;
             }  
         }
         .headerUserDetails{
             font-family: "calibri";
             font-size: 18px;
             position: absolute; 
-            right: 9%;
+            right: 10%;
             top: 24px;
+            cursor: pointer;
             .headerUserIcon{
                 background: ~"url('../../src/Images/icons2.png')" -322px -106px  no-repeat; 
                 height: 25px;
@@ -43,8 +47,8 @@
                 filter: invert(100%);
                 display: inline-block;
                 top: 2px;
-                right: 85px;
-                position: absolute;
+                right: auto;
+                position: relative;
             }  
             .headerDropdownIcon{
                 background: ~"url('../../src/Images/icons.png')" -225px -80px no-repeat; 
@@ -73,6 +77,7 @@
         width: 50px;
         filter: invert(100%);
         display: inline-flex;
+        cursor: pointer;
          } 
   }
 }
@@ -86,4 +91,48 @@
         color: #000000 !important;
         padding: 0px 9px !important;
     }
+}
+.locationOverlay {
+    position: absolute;
+    right: 13%;
+    top: 30px;
+    width: 115px;
+    border: 1px solid #c3c3cc;
+    z-index: 10;
+    ul{
+        background-color: white;
+        color: #727277;
+        cursor: pointer;
+        list-style-type: none;
+        font-family: "calibri";
+        font-size: 17px;
+        padding: 4px 20px;
+        margin-bottom: 0px;
+    }
+}
+.locationOverlayUO {
+    position: absolute;
+    top: 42px;
+    border: 1px solid #c3c3cc;
+    z-index: 10;
+    ul{
+        background-color: white;
+        color: #727277;
+        cursor: pointer;
+        list-style-type: none;
+        font-family: "calibri";
+        font-size: 17px;
+        padding: 4px 20px;
+        margin-bottom: 0px;
+    }
+}
+.upArrow {
+    width: 0px;
+    position: absolute;
+    height: 0px;
+    top: -8%;
+    right: 52%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
 }

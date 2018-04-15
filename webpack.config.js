@@ -33,6 +33,10 @@ module.exports = env => {
             'image-webpack-loader'
           ]
         },
+        {
+          test: /\.json$/,
+          loader: 'json-loader'
+        }
       ],
     },
     plugins: removeEmpty([

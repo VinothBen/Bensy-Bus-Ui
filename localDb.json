@@ -1,0 +1,39 @@
+{
+    "bus": [
+        {
+            "busName": "Blue Moon Travels",
+            "busManufacturerName": "Volvo A/C Multi-Axle Semisleeper (2+2)",
+            "depatureTime": "22:40",
+            "arrivalTime": "04:05",
+            "travalingTime": "05 h 25m",
+            "ratings": "4.7",
+            "totalRatings": "1464",
+            "availableSeats": "24",
+            "windowSeats": "9",
+            "ticketPrice": "600",
+            "utilities": "water-bottle,blankets,charging-poits,reading-light,emergency-exit,snacks,wifi",
+            "gpsAvailable": "true"
+        }
+    ],
+    "home": {
+        "navigations": [
+            "BUS",
+            "HOTELS",
+            "TRAIN",
+            "FLIGHT"
+        ],
+        "locations": [
+            "Chennai",
+            "Bangalore",
+            "Kerala",
+            "Andhara"
+        ],
+        "useroptions": [
+            "Profile",
+            "Booking History",
+            "About",
+            "Log Out"
+        ],
+        "headerLabel": "Summa!"
+    }
+}
